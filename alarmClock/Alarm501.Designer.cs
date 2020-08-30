@@ -44,6 +44,7 @@
             this.editButton.TabIndex = 0;
             this.editButton.Text = "edit";
             this.editButton.UseVisualStyleBackColor = true;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // plusButton
             // 
@@ -65,6 +66,7 @@
             this.snoozeButton.TabIndex = 0;
             this.snoozeButton.Text = "snooze";
             this.snoozeButton.UseVisualStyleBackColor = true;
+            this.snoozeButton.Click += new System.EventHandler(this.snoozeButton_Click);
             // 
             // stopButton
             // 
@@ -75,6 +77,7 @@
             this.stopButton.TabIndex = 0;
             this.stopButton.Text = "stop";
             this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // listBox1
             // 
@@ -85,7 +88,7 @@
             this.listBox1.Size = new System.Drawing.Size(397, 319);
             this.listBox1.TabIndex = 1;
             // 
-            // Form1
+            // Alarm501
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +98,7 @@
             this.Controls.Add(this.snoozeButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.editButton);
-            this.Name = "Form1";
+            this.Name = "Alarm501";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

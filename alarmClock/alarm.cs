@@ -5,54 +5,43 @@ using System.Windows.Forms.Design;
 
 namespace alarmClock
 {
-    public class alarm
+    public class Alarm
     {
 
         private bool status; //this determines if the alarm is on(true) or off(false)
 
-        private int hour; //the hour of the alarm
-        private int minute; //the minute of the alarm
-        private int second; //the second of the alarm
+        private DateTime alarmTime;
 
-        private bool amPM; //this bool is true if am, false if pm
 
-        public alarm()
+        public Alarm()
         {
 
             status = false;
-            hour = 0;
-            minute = 0;
-            second = 0;
+            
 
-            amPM = true;
 
         }//default constructor
 
 
 
 
-        public alarm(int h,int m,int s, bool b)
+        public Alarm(DateTime dt)
         {
 
-            hour = h;
-            minute = m;
-            second = s;
+            alarmTime = dt;
 
-            amPM = b;
 
         }//filled constructor
 
 
 
 
-        public void setTime(int h, int m, int s, bool b)
+        public void setTime(DateTime dt)
         {
 
-            hour = h;
-            minute = m;
-            second = s;
+            alarmTime = dt;
 
-            amPM = b;
+            
 
         }//set the time for this alarm
 
@@ -72,25 +61,7 @@ namespace alarmClock
 
 
 
-        public int getHour()
-        {
-            return hour;
-        }//returns the hour
-
-        public int getMinute()
-        {
-            return minute;
-        }//returns the minute
-        public int getSecond()
-        {
-            return second;
-        }//returns the second
-
-
-        public bool getAmPm()
-        {
-            return amPM;
-        }//returns am(true) or pm(false)
+    
 
         public bool getStatus()
         {

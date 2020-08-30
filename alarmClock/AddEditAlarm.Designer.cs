@@ -28,18 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.onOffButton = new System.Windows.Forms.RadioButton();
             this.setButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // onOffButton
             // 
+            this.onOffButton.Appearance = System.Windows.Forms.Appearance.Button;
+            this.onOffButton.AutoCheck = false;
             this.onOffButton.AutoSize = true;
             this.onOffButton.Location = new System.Drawing.Point(292, 64);
             this.onOffButton.Name = "onOffButton";
-            this.onOffButton.Size = new System.Drawing.Size(41, 19);
+            this.onOffButton.Size = new System.Drawing.Size(33, 25);
             this.onOffButton.TabIndex = 0;
             this.onOffButton.TabStop = true;
             this.onOffButton.Text = "On";
@@ -67,8 +71,10 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker1.Location = new System.Drawing.Point(54, 64);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 3;
             // 
@@ -94,5 +100,6 @@
         private System.Windows.Forms.Button setButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

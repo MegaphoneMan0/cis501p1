@@ -15,6 +15,10 @@ namespace alarmClock
         public Alarm501()
         {
             InitializeComponent();
+
+
+
+
         }
 
         private void plusButton_Click(object sender, EventArgs e)
@@ -22,15 +26,40 @@ namespace alarmClock
 
             //if(datetimepicker.ShowDialog() == DialogResult.OK)
 
-            Form dateTimePicker = new AddEditAlarm();
+            AddEditAlarm dateTimePicker = new AddEditAlarm();
             
-            dateTimePicker.ShowDialog();
+            if(dateTimePicker.ShowDialog() == DialogResult.OK)
+            {
+
+                myAlarms.Add(dateTimePicker.thisAlarm);
+
+            }
 
 
             
+        }//adding an alarm
 
+        BindingList<Alarm> myAlarms;
 
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void snoozeButton_Click(object sender, EventArgs e)
+        {
 
         }
-    }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+
+        }
+    }//end of form
+
+
+
+
+
+
 }
