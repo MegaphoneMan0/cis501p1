@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace alarmClock
 {
-    public partial class Form1 : Form
+    public partial class Alarm501 : Form
     {
-        public Form1()
+        public Alarm501()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace alarmClock
         {
 
         //if(datetimepicker.ShowDialog() == DialogResult.OK)
-
+        
 
         }
     }

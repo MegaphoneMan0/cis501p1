@@ -17,7 +17,7 @@ namespace alarmClock
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Alarm501());
 
            // int numberOfAlarms = 0; //there is a max of 10
         
