@@ -24,7 +24,6 @@ namespace alarmClock
         private void plusButton_Click(object sender, EventArgs e)
         {
 
-            //if(datetimepicker.ShowDialog() == DialogResult.OK)
 
             AddEditAlarm dateTimePicker = new AddEditAlarm();
             
