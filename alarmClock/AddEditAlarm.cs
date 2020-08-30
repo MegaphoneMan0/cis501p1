@@ -19,5 +19,10 @@ namespace alarmClock
         {
             this.Close();
         }
+
+        private void setButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

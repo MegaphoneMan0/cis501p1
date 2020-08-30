@@ -21,12 +21,13 @@ namespace alarmClock
         {
 
             //if(datetimepicker.ShowDialog() == DialogResult.OK)
-            while (true)
-            {
-                AddEditAlarm.ShowDialog();
+
+            Form dateTimePicker = new AddEditAlarm();
+            
+            dateTimePicker.ShowDialog();
 
 
-            }
+            
 
 
 

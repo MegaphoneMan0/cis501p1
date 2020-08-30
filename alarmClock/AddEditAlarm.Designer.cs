@@ -53,6 +53,7 @@
             this.setButton.TabIndex = 1;
             this.setButton.Text = "Set";
             this.setButton.UseVisualStyleBackColor = true;
+            this.setButton.Click += new System.EventHandler(this.setButton_Click);
             // 
             // cancelButton
             // 
