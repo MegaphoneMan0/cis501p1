@@ -20,8 +20,15 @@ namespace alarmClock
         private void plusButton_Click(object sender, EventArgs e)
         {
 
-        //if(datetimepicker.ShowDialog() == DialogResult.OK)
-        
+            //if(datetimepicker.ShowDialog() == DialogResult.OK)
+            while (true)
+            {
+                AddEditAlarm.ShowDialog();
+
+
+            }
+
+
 
         }
     }
